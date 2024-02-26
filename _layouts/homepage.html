@@ -16,7 +16,7 @@
 <meta charset="utf-8">
 <link rel="stylesheet" href="./assets/css/style.css" type="text/css"/>
 <link rel="stylesheet" href="./assets/css/jemdocCustom.css" type="text/css"/>
-<title>{{ site.title }}</title>
+<title>{{ site.title }} - {{ page.title }}</title>
 </head>
 <body>
 <table summary="Table for page layout." id="tlayout">
@@ -133,7 +133,7 @@
             </div>
             <div id="footer">
                 <div style="text-align: center;">Copyright &copy; Xiwei Deng | Last modified :
-                    {{site.modification_date}}
+                    {{ 'now' | date: '%b %Y' }}
                 </div>
             </div>
         </td>
